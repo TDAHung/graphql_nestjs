@@ -3,6 +3,7 @@
 # ------------------------------------------------------
 
 input CreateTodoInput {
+  price: Float!
   title: String!
 }
 
@@ -14,14 +15,17 @@ type Mutation {
 
 type Query {
   todo(id: Int!): Todo!
+  todos: [Todo!]!
 }
 
 type Todo {
   id: Int!
+  price: Float!
   title: String!
 }
 
 input UpdateTodoInput {
   id: Int!
+  price: Float
   title: String!
 }

@@ -4,4 +4,7 @@ import { InputType, Field } from '@nestjs/graphql';
 export class CreateTodoInput {
     @Field()
     title: string;
+
+    @Field()
+    price: number;
 }

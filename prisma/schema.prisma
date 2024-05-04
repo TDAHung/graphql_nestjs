@@ -16,6 +16,7 @@ datasource db {
 model Todo {
   id         Int      @id @default(autoincrement())
   title      String
+  price      Float    @default(1)
   created_at DateTime @default(now())
   updated_at DateTime @default(now())
 }

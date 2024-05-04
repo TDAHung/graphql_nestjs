@@ -1,4 +1,4 @@
-import { ObjectType, Field, Int, Float } from '@nestjs/graphql';
+import { ObjectType, Field, Int } from '@nestjs/graphql';
 
 @ObjectType()
 export class Todo {
@@ -7,4 +7,7 @@ export class Todo {
 
   @Field()
   title: string;
+
+  @Field()
+  price: number;
 }
